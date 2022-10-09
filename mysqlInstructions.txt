@@ -1,0 +1,29 @@
+macOs
+
+mysql-connector-java.8.030.jar
+
+java 11
+
+export PATH=${PATH}:/usr/local/mysql/bin
+
+mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED by 'root';
+
+CREATE TABLE `jdbcdb`.`laptops` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `manufacturer` VARCHAR(1000) NULL,
+  `screen_size` VARCHAR(1000) NULL,
+  `screen_type` VARCHAR(1000) NULL,
+  `screen_touchscreen` VARCHAR(1000) NULL,
+  `processor_name` VARCHAR(1000) NULL,
+  `processor_physical_cores` VARCHAR(1000) NULL,
+  `processor_clock_speed` VARCHAR(1000) NULL,
+  `ram` VARCHAR(1000) NULL,
+  `disc_storage` VARCHAR(1000) NULL,
+  `disc_type` VARCHAR(1000) NULL,
+  `graphic_card_name` VARCHAR(1000) NULL,
+  `graphic_card_memory` VARCHAR(1000) NULL,
+  `os` VARCHAR(1000) NULL,
+  `disc_reader` VARCHAR(1000) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
