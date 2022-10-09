@@ -558,6 +558,9 @@ public class Main {
         
         btn_textFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+            	
+            	colorByRow = new HashMap<Integer, Color>();
+                wasModified = new HashMap<Integer, Boolean>();
                 JFileChooser filechooser = new JFileChooser();
 
                 int i = filechooser.showOpenDialog(null);
@@ -602,6 +605,10 @@ public class Main {
 
         btn_xmlFile.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+            	
+            	colorByRow = new HashMap<Integer, Color>();
+                wasModified = new HashMap<Integer, Boolean>();
+                
                 JFileChooser filechooser = new JFileChooser();
 
                 int i = filechooser.showOpenDialog(null);
